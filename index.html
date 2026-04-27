@@ -3,32 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página QR</title>
+    <title>Validación de Cámara</title>
+
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: #7b2b2b;
+            background: #0f172a;
             color: white;
+        }
+
+        .header {
+            background: #1e293b;
+            padding: 15px;
             text-align: center;
+            font-size: 20px;
+            font-weight: bold;
         }
-        h1 {
-            font-size: 2.5rem;
+
+        .container {
+            padding: 20px;
         }
-        p {
-            font-size: 1.2rem;
+
+        .card {
+            background: #1e293b;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .card h2 {
+            margin: 0 0 10px 0;
+        }
+
+        .card p {
+            margin: 0;
             opacity: 0.8;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin-top: 20px;
+            background: #22c55e;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #16a34a;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 12px;
+            opacity: 0.6;
         }
     </style>
 </head>
+
 <body>
-    <div>
-        <h1>pagina tomassssssss como ejemplo</h1>
-        <p>repo</p>
+
+    <div class="header">
+        Validación de Cámara
     </div>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>Tomas</h2>
+            <p>Captura frontal del usuario</p>
+        </div>
+
+        <div class="card">
+            <h2>Tomas</h2>
+            <p>Captura de identificación</p>
+        </div>
+
+        <div class="card">
+            <h2>Tomas</h2>
+            <p>Validación biométrica</p>
+        </div>
+
+        <button class="btn" onclick="alert('Simulación de apertura de cámara 📷')">
+            Iniciar Validación
+        </button>
+
+    </div>
+
+    <div class="footer">
+        Sistema de validación © 2026
+    </div>
+
 </body>
 </html>
