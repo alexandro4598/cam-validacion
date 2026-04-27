@@ -1,105 +1,115 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Validación de Cámara</title>
+<meta charset="UTF-8">
+<title>Validación de documentos</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+    }
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0f172a;
-            color: white;
-        }
+    .container {
+        max-width: 600px;
+        margin: 40px auto;
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        text-align: center;
+    }
 
-        .header {
-            background: #1e293b;
-            padding: 15px;
-            text-align: center;
-            font-size: 20px;
-            font-weight: bold;
-        }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
 
-        .container {
-            padding: 20px;
-        }
+    .header img {
+        height: 60px;
+    }
 
-        .card {
-            background: #1e293b;
-            border-radius: 15px;
-            padding: 20px;
-            margin-bottom: 15px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-        }
+    h2 {
+        margin: 10px 0;
+    }
 
-        .card h2 {
-            margin: 0 0 10px 0;
-        }
+    .subtitle {
+        color: #666;
+        margin-bottom: 20px;
+    }
 
-        .card p {
-            margin: 0;
-            opacity: 0.8;
-        }
+    .field {
+        text-align: left;
+        margin-bottom: 15px;
+    }
 
-        .btn {
-            display: block;
-            width: 100%;
-            padding: 15px;
-            margin-top: 20px;
-            background: #22c55e;
-            border: none;
-            border-radius: 10px;
-            color: white;
-            font-size: 16px;
-            cursor: pointer;
-        }
+    .field label {
+        font-size: 12px;
+        color: #777;
+        display: block;
+        margin-bottom: 5px;
+    }
 
-        .btn:hover {
-            background: #16a34a;
-        }
+    .field input {
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #d4af37;
+        border-radius: 8px;
+        background-color: #fdfdfd;
+    }
 
-        .footer {
-            text-align: center;
-            padding: 15px;
-            font-size: 12px;
-            opacity: 0.6;
-        }
-    </style>
+    .success {
+        margin-top: 20px;
+        font-size: 40px;
+        color: green;
+    }
+
+    .date {
+        text-align: left;
+        margin-top: 10px;
+    }
+</style>
 </head>
-
 <body>
 
+<div class="container">
+
     <div class="header">
-        Validación de Cámara
+        <img src="logo_educacion.png" alt="Educación">
+        <img src="logo_benc.png" alt="BENC">
     </div>
 
-    <div class="container">
+    <div class="subtitle">Sistema de Información y Gestión Educativa</div>
 
-        <div class="card">
-            <h2>Tomas</h2>
-            <p>Captura frontal del usuario</p>
-        </div>
+    <h2>Validación de documentos<br>académicos electrónicos</h2>
 
-        <div class="card">
-            <h2>Tomas</h2>
-            <p>Captura de identificación</p>
-        </div>
-
-        <div class="card">
-            <h2>Tomas</h2>
-            <p>Validación biométrica</p>
-        </div>
-
-        <button class="btn" onclick="alert('Simulación de apertura de cámara 📷')">
-            Iniciar Validación
-        </button>
-
+    <div class="field">
+        <label>NOMBRE</label>
+        <input type="text" value="Tomas Gutierrez Lopez" readonly>
     </div>
 
-    <div class="footer">
-        Sistema de validación © 2026
+    <div class="field">
+        <label>CURP</label>
+        <input type="text" value="AEHA983ddnbceifb" readonly>
     </div>
+
+    <div class="field">
+        <label>DOCUMENTO</label>
+        <input type="text" value="Constancia (120 horas)" readonly>
+    </div>
+
+    <div class="date">
+        <strong>FECHA</strong><br>
+        19 de noviembre de 2024
+    </div>
+
+    <div class="success">
+        ✔
+    </div>
+
+</div>
 
 </body>
 </html>
